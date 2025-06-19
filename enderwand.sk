@@ -9,3 +9,6 @@ on load:
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core2}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand2" in group "End_wands"
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core3}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand3" in group "End_wands"
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core4}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand4" in group "End_wands"
+    on pickup of popped chorus fruit:
+    if name of event-item is "&4Ender Wand":
+        broadcast "The Wand May Rise."
