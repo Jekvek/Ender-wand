@@ -9,6 +9,22 @@ on load:
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core2}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand2" in group "End_wands"
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core3}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand3" in group "End_wands"
     register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core4}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand4" in group "End_wands"
+    
     on pickup of popped chorus fruit:
     if name of event-item is "&4Ender Wand":
         broadcast "The Wand May Rise."
+           loop 50 times:
+            wait 5 ticks
+            spawn 25 of particle "enchant" colored purple at location of event-player offset by random vector length 0.5 to 1.5
+            
+          # the rest of the code will give the current staff members a wand when they join(only add this if testing remove after test is complete)  
+          
+            on join:
+    if name of player is "_R9mer_" or name of player is "bendiegames" or name of player is "coop":
+        give player popped chorus fruit named "&4Ender Wand" with lore "A wand from a new dimension.(I wonder what it may do....)"
+        
+        on rightclick with popped chorus fruit:
+    if name of player's tool is "&4Ender Wand":
+        shoot ender pearl from player
+        play sound "entity.ender_pearl.throw" at player
+        
