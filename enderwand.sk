@@ -1,0 +1,11 @@
+on load:
+    set {_Ender_Wand} to popped chorus fruit named "&4Ender Wand" with lore "A wand from a new dimension.(I wonder what it may do....)"
+    set {_eye_of_chorus_fruit} to chorus fruit
+    set {_wand_core1} to stick named "&5Magic Wand" with lore "Invisibility"
+    set {_wand_core2} to stick named "&5Magic Wand" with lore "regeneration"
+    set {_wand_core3} to stick named "&5Magic Wand" with lore "resistance"
+    set {_wand_core4} to stick named "&5Magic Wand" with lore "Night Vision"
+    register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core1}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand1" in group "End_wands"
+    register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core2}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand2" in group "End_wands"
+    register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core3}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand3" in group "End_wands"
+    register new shaped recipe for {_Ender_Wand} using {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_wand_core4}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit}, {_eye_of_chorus_fruit} with id "Ender_wand4" in group "End_wands"
